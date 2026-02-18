@@ -66,6 +66,15 @@ The full argument and architecture:
 1. [Bibliography](06_references/bibliography.md) — Full reference list
 2. [Reading List](06_references/reading_list.md) — Recommended reading order for newcomers
 
+### 7. Metaphysics
+The Platonic argument — four independent convergences on the reality of formal structure:
+
+1. [Index: The Four Convergences](07_metaphysics/index.md) — Overview and the self-application argument
+2. [Computational Parsimony](07_metaphysics/computational_parsimony.md) — Cheapest to run
+3. [Information-Theoretic Parsimony](07_metaphysics/information_theoretic_parsimony.md) — Shortest to encode
+4. [Conceptual Parsimony](07_metaphysics/conceptual_parsimony.md) — Simplest to understand
+5. [Historical Convergence](07_metaphysics/historical_convergence.md) — Independently rediscovered by everyone who tries
+
 ## Related Work
 - [The QBBN Paper (2024)](https://arxiv.org/abs/2402.06557)
 - [Statistical Parsing for Logical Information Retrieval (2026)](https://github.com/gregorycoppola/world)
