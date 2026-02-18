@@ -97,3 +97,12 @@ scalable construction. That is what LLMs make possible.
 - Palmer, M., Gildea, D., and Kingsbury, P. "The Proposition Bank: An Annotated
   Corpus of Semantic Roles." *Computational Linguistics*, 31(1):71-106, 2005.
 - Banarescu, L. et al. "Abstract Meaning Representation for Sembanking." LAW, 2013.
+
+## Open Questions
+
+- Was the failure of formal NLP inevitable, or could it have succeeded with
+  better tooling and more funding for annotation?
+- Is the statistical/formal divide a false dichotomy, or does it reflect a
+  genuine architectural difference that cannot be bridged within a single system?
+- Could active learning (where the system identifies the most informative
+  sentences to annotate) have closed the annotation gap without LLMs?
