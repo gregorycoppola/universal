@@ -46,11 +46,34 @@ The novel synthesis — connecting the QBBN's logical language to Fodor's LOT an
 3. [The Three Tiers](03_language_of_concepts/three_tiers.md) — Prawitz's tiers as levels of conceptual complexity
 4. [UG as Interface Specification](03_language_of_concepts/ug_as_interface.md) — Grammar rules as the universal mapping
 
-### 4. Hallucination
-*(Coming soon)* Why this matters: LLMs have no language of thought, and that's why they hallucinate.
+### 4. Hallucination and Verification
+Why this matters — LLMs hallucinate because they lack formal language, and formal verification is the solution:
+
+1. [Why LLMs Hallucinate](04_hallucination/why_llms_hallucinate.md) — No LOT, no verification, no grounding
+2. [The Verification Gap](04_hallucination/verification_gap.md) — The runtime analogy — you trust code because you run it
+3. [The QBBN as Runtime](04_hallucination/qbbn_as_runtime.md) — The QBBN as a "Python interpreter" for thought
+4. [Formal Verification](04_hallucination/formal_verification.md) — Why natural language must be translated to formal language to be checked
 
 ### 5. Synthesis
-*(Coming soon)* The full argument and architecture.
+The full argument and architecture:
+
+1. [The Universal Language Thesis](05_synthesis/universal_language_thesis.md) — The big claim: typed logical language = universal language
+2. [The Architecture](05_synthesis/architecture.md) — LLM preprocesses → grammar parses → QBBN infers
+3. [Vibe Science Methodology](05_synthesis/vibe_science_methodology.md) — How this was built, the bridge stage
+
+### 6. References
+
+1. [Bibliography](06_references/bibliography.md) — Full reference list
+2. [Reading List](06_references/reading_list.md) — Recommended reading order for newcomers
+
+### 7. Metaphysics
+The Platonic argument — four independent convergences on the reality of formal structure:
+
+1. [Index: The Four Convergences](07_metaphysics/index.md) — Overview and the self-application argument
+2. [Computational Parsimony](07_metaphysics/computational_parsimony.md) — Cheapest to run
+3. [Information-Theoretic Parsimony](07_metaphysics/information_theoretic_parsimony.md) — Shortest to encode
+4. [Conceptual Parsimony](07_metaphysics/conceptual_parsimony.md) — Simplest to understand
+5. [Historical Convergence](07_metaphysics/historical_convergence.md) — Independently rediscovered by everyone who tries
 
 ## Related Work
 - [The QBBN Paper (2024)](https://arxiv.org/abs/2402.06557)
