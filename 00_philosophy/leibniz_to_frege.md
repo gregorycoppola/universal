@@ -104,15 +104,15 @@ conclusions.
 Frege's contributions:
 
 1. **Predicate logic**: Generalized Aristotle's subject-predicate structure to
-   arbitrary predicates with multiple arguments. `loves(john, mary)` rather than
+   arbitrary predicates with multiple arguments. loves(john, mary) rather than
    just "John is mortal."
-2. **Quantifiers**: Universal (∀) and existential (∃) quantification, binding
-   variables in predicates. `∀x: man(x) → mortal(x)`.
+2. **Quantifiers**: Universal and existential quantification, binding variables
+   in predicates. For all x: man(x) implies mortal(x).
 3. **Compositionality**: The meaning of a complex expression is a function of the
    meanings of its parts — now called **Frege's Principle**, the foundation of all
    formal semantics.
 4. **Function-argument structure**: Concepts are functions from objects to truth
-   values. `man(·)` is a function that takes an entity and returns true or false.
+   values. man(·) is a function that takes an entity and returns true or false.
 
 Frege's system is the direct ancestor of the QBBN's logical language. The QBBN
 adds three things Frege lacked: role labels (from 20th century linguistics),
@@ -126,3 +126,114 @@ the view that the world consists of atomic facts, and language is meaningful
 insofar as it pictures these facts.
 
 Russell's atomic facts are the QBBN's ground facts:
+
+    man(theme: socrates)             -- an atomic fact
+    trust(agent: jack, patient: jill)  -- an atomic fact
+
+Russell's logical connectives (and, or, not, if-then) combine atomic facts into
+molecular facts — exactly as the QBBN's Horn clauses combine ground facts into
+rules.
+
+Russell's project (with Whitehead) of reducing all mathematics to logic
+(*Principia Mathematica*, 1910-1913) showed both the power and the limits of
+formal representation. The power: vast domains of knowledge can be represented
+in a single formal language. The limits: Gödel (1931) proved that any sufficiently
+powerful formal system contains true statements it cannot prove.
+
+The QBBN avoids Gödel's limitation by staying in the forward fragment of natural
+deduction — a decidable fragment that does not attempt to capture all of
+mathematics, only the reasoning patterns needed for natural language inference.
+
+## Wittgenstein's Picture Theory
+
+The early Wittgenstein (*Tractatus Logico-Philosophicus*, 1921) proposed the
+**picture theory of meaning**: a proposition is a logical picture of a fact.
+The structure of the proposition mirrors the structure of the fact it represents.
+
+    "Socrates is mortal"                    -- the proposition (natural language)
+    mortal(theme: socrates)                 -- the logical picture (QBBN)
+    [Socrates, the actual person, is mortal] -- the fact (world)
+
+The picture theory says that meaning consists in this structural correspondence
+between language, logic, and world. The QBBN makes this correspondence
+computable: natural language is parsed into logical form (the picture), and
+inference operates on the picture to derive new pictures (conclusions) that
+correspond to new facts.
+
+The later Wittgenstein (*Philosophical Investigations*, 1953) abandoned the
+picture theory in favor of "meaning is use" — the view that the meaning of a
+word is determined by how it is used in practice, not by its correspondence to
+abstract objects. This is essentially the position that modern LLMs instantiate:
+they learn meaning from patterns of use in training data, without any formal
+logical structure.
+
+The QBBN represents a return to the early Wittgenstein — meaning as logical
+picture — but informed by the later Wittgenstein's insight that use matters.
+The LLM captures meaning-from-use; the grammar translates it into meaning-as-
+picture; the QBBN reasons over the pictures.
+
+## Carnap and Logical Syntax
+
+Rudolf Carnap (*The Logical Syntax of Language*, 1934; *Meaning and Necessity*,
+1947) attempted to formalize the relationship between language and logic using
+the tools of metamathematics. His program:
+
+1. Define the **syntax** of a formal language precisely
+2. Define **transformation rules** (inference rules) over that syntax
+3. Show that the syntax + rules capture the logical relationships in natural
+   language
+
+Carnap's program is the direct ancestor of formal semantics (Montague) and,
+through Montague, of the QBBN. The key innovation was treating logical form as
+a **linguistic** object — something that could be studied with the tools of
+grammar and syntax, not just the tools of mathematics.
+
+## The Thread
+
+The philosophical thread from Plato to the QBBN:
+
+1. **Plato**: There exist universal, abstract Forms that particular things
+   participate in.
+2. **Aristotle**: These universals are predicated of particulars via structured
+   categories; valid reasoning follows syllogistic patterns.
+3. **Leibniz**: A universal formal language and a calculus for reasoning in it
+   would resolve all disputes.
+4. **Kant**: The mind imposes structural categories on experience; these
+   categories are prior to any particular knowledge.
+5. **Frege**: Predicate logic with quantifiers and compositionality — the first
+   working universal language.
+6. **Russell**: The world consists of atomic facts; language pictures them;
+   logic connects them.
+7. **Wittgenstein**: Propositions are logical pictures of facts (early); meaning
+   is use (later).
+8. **Carnap**: Logical syntax as the bridge between language and logic.
+9. **Montague**: Natural language can be treated with the same formal rigor as
+   logic.
+10. **Pearl**: Probabilistic reasoning over structured representations via belief
+    propagation.
+11. **QBBN**: Typed predicates (Forms/categories) + Horn clauses (syllogisms) +
+    belief propagation (calculus ratiocinator) + LLM parsing (the missing bridge
+    from language to logic).
+
+The dream is twenty-four centuries old. The tools to realize it are twenty-four
+months old.
+
+## Key Works
+
+- Leibniz, G.W. *Dissertatio de Arte Combinatoria*. 1666.
+- Locke, J. *An Essay Concerning Human Understanding*. 1690.
+- Kant, I. *Critique of Pure Reason*. 1781.
+- Frege, G. *Begriffsschrift*. 1879.
+- Russell, B. "The Philosophy of Logical Atomism." 1918.
+- Wittgenstein, L. *Tractatus Logico-Philosophicus*. 1921.
+- Carnap, R. *The Logical Syntax of Language*. 1934.
+
+## Open Questions
+
+- Is Leibniz's dream achievable, or did Gödel permanently foreclose the
+  possibility of a complete characteristica universalis?
+- Does the QBBN's restriction to the forward fragment of natural deduction avoid
+  Gödel's incompleteness, or does it sacrifice too much expressiveness?
+- Is the universality of the type system (entities, predicates, propositions)
+  a discovery about the structure of thought, or a convenient engineering choice?
+- Would Leibniz recognize the QBBN as his characteristica universalis?
