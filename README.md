@@ -14,8 +14,16 @@ QBBN provides it, which is why it doesn't.
 
 ## Reading Order
 
+### 0. Philosophy
+The deep history — from Plato's Forms to Frege's concept-script:
+
+1. [Plato: Theory of Forms](00_philosophy/plato_forms.md) — Abstract universals and the allegory of the cave
+2. [Aristotle: Categories and Syllogisms](00_philosophy/aristotle_categories.md) — Predication, substance, and the first formal logic
+3. [The Medieval Universals Debate](00_philosophy/medieval_universals.md) — Do abstract concepts really exist?
+4. [From Leibniz to Frege](00_philosophy/leibniz_to_frege.md) — The dream of a universal language, through Kant, Russell, Wittgenstein, and Carnap
+
 ### 1. Foundations
-Start here to understand the five intellectual ancestors:
+The five intellectual ancestors of the QBBN:
 
 1. [Chomsky: Universal Grammar](01_foundations/chomsky_universal_grammar.md) — The claim that language has innate structure
 2. [Fodor: Language of Thought](01_foundations/fodor_language_of_thought.md) — The claim that thought itself is language-like
@@ -24,16 +32,25 @@ Start here to understand the five intellectual ancestors:
 5. [Pearl: Probabilistic Reasoning](01_foundations/pearl_probabilistic_reasoning.md) — The machinery that makes it run
 
 ### 2. The Bitter Lesson
-Why formal NLP failed historically and why LLMs change the equation.
+Why formal NLP failed historically and why LLMs change the equation:
+
+1. [Sutton's Bitter Lesson](02_the_bitter_lesson/sutton_bitter_lesson.md) — General methods that scale with compute always win
+2. [Why Formal NLP Failed](02_the_bitter_lesson/formal_nlp_failure.md) — The annotation bottleneck
+3. [The LLM as Annotator](02_the_bitter_lesson/llm_as_annotator.md) — Why LLMs change the equation
 
 ### 3. Language of Concepts
-The novel synthesis — connecting the QBBN's logical language to Fodor's LOT and Chomsky's UG.
+The novel synthesis — connecting the QBBN's logical language to Fodor's LOT and Chomsky's UG:
+
+1. [What Is a Language of Thought?](03_language_of_concepts/what_is_lot.md) — Fodor's requirements and the QBBN as LOT
+2. [Typed Predicates as Concepts](03_language_of_concepts/typed_predicates_as_concepts.md) — Role-labeled predicates = structured concepts
+3. [The Three Tiers](03_language_of_concepts/three_tiers.md) — Prawitz's tiers as levels of conceptual complexity
+4. [UG as Interface Specification](03_language_of_concepts/ug_as_interface.md) — Grammar rules as the universal mapping
 
 ### 4. Hallucination
-Why this matters: LLMs have no language of thought, and that's why they hallucinate.
+*(Coming soon)* Why this matters: LLMs have no language of thought, and that's why they hallucinate.
 
 ### 5. Synthesis
-The full argument and architecture.
+*(Coming soon)* The full argument and architecture.
 
 ## Related Work
 - [The QBBN Paper (2024)](https://arxiv.org/abs/2402.06557)
