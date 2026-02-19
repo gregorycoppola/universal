@@ -75,6 +75,17 @@ The Platonic argument — four independent convergences on the reality of formal
 4. [Conceptual Parsimony](07_metaphysics/conceptual_parsimony.md) — Simplest to understand
 5. [Historical Convergence](07_metaphysics/historical_convergence.md) — Independently rediscovered by everyone who tries
 
+### 8. Computability
+The QBBN's position in the computability landscape — why the forward fragment is the sweet spot:
+
+1. [Index: Computability and the Forward Fragment](08_computability/index.md) — Overview and the key insight
+2. [FOL and Turing Completeness](08_computability/fol_turing_completeness.md) — The bidirectional equivalence
+3. [The Turing Machine Encoding](08_computability/turing_encoding.md) — How to encode a TM in Horn clauses
+4. [Prawitz's Rules and Computability](08_computability/prawitz_computability.md) — The minimal Turing-complete fragment of natural deduction
+5. [The Datalog Boundary](08_computability/datalog_boundary.md) — Finite grounding = decidability
+6. [The Complexity Landscape](08_computability/complexity_landscape.md) — Where every fragment sits
+7. [Why Sub-Turing Is a Feature](08_computability/sub_turing_feature.md) — Termination as a prerequisite for trust
+
 ## Related Work
 - [The QBBN Paper (2024)](https://arxiv.org/abs/2402.06557)
 - [Statistical Parsing for Logical Information Retrieval (2026)](https://github.com/gregorycoppola/world)
