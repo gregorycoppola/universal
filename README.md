@@ -86,6 +86,31 @@ The QBBN's position in the computability landscape — why the forward fragment 
 6. [The Complexity Landscape](08_computability/complexity_landscape.md) — Where every fragment sits
 7. [Why Sub-Turing Is a Feature](08_computability/sub_turing_feature.md) — Termination as a prerequisite for trust
 
+### 9. Interpretability
+The QBBN as a solution to the interpretability problem:
+
+1. [Index](09_interpretability/index.md) — Overview
+2. [The Interpretability Problem](09_interpretability/interpretability_problem.md) — Why neural networks are opaque
+3. [Verification over Interpretation](09_interpretability/verification_over_interpretation.md) — Don't interpret the model, verify the output
+4. [UG as Interface](09_interpretability/ug_as_interface.md) — The typed language as the human-machine boundary
+5. [Human-Computer Fusion](09_interpretability/human_computer_fusion.md) — LLM generates, QBBN verifies, human directs
+
+### 10. Applications
+The universal language beyond natural language — software engineering as the first application:
+
+1. [Index: Applications](10_applications/index.md) — Why software architecture is the most immediate application
+2. [Software Architecture as Logic](10_applications/software_architecture.md) — Components are entities, dependencies are Horn clauses, the architecture diagram is a factor graph
+3. [Functions as Relations](10_applications/functions_as_relations.md) — Data flow through shared variables, functions as predicates with output roles, the logic programming connection (Kowalski 1974)
+4. [Workflow Verification](10_applications/workflow_verification.md) — DAG-shaped workflows, failure propagation via backward inference, soft dependencies via modal quantifiers
+5. [The Vibe Coding Connection](10_applications/vibe_coding.md) — LLM generates code, QBBN holds the spec, same architecture as natural language verification
+6. [Prolog Examples](prolog/) — Runnable logic programming examples demonstrating the concepts
+
+## Key Open Questions
+
+- **Functions and values**: The calculus handles truth values but not computed values. The logic programming tradition (Prolog, Datalog, CLP) maps the design space. The QBBN sits at Datalog (decidable, no function symbols). Extending to computed values requires careful design to preserve decidability. See [Functions as Relations](10_applications/functions_as_relations.md).
+
+- **Testing as verification**: Two levels mirror Rust's compilation pipeline. Level 1 (compilation): does the logical form type-check? Level 2 (inference): does the factor graph produce the expected posterior? The growing test suite is both a grammar coverage test and an inference test.
+
 ## Related Work
 - [The QBBN Paper (2024)](https://arxiv.org/abs/2402.06557)
 - [Statistical Parsing for Logical Information Retrieval (2026)](https://github.com/gregorycoppola/world)
