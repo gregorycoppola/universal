@@ -100,16 +100,21 @@ The universal language beyond natural language — software engineering as the f
 
 1. [Index: Applications](10_applications/index.md) — Why software architecture is the most immediate application
 2. [Software Architecture as Logic](10_applications/software_architecture.md) — Components are entities, dependencies are Horn clauses, the architecture diagram is a factor graph
-3. [Functions as Relations](10_applications/functions_as_relations.md) — Data flow through shared variables, functions as predicates with output roles, the logic programming connection (Kowalski 1974)
+3. [Functions as Relations](10_applications/functions_as_relations.md) — Data flow through shared variables, functions as predicates with output roles
 4. [Workflow Verification](10_applications/workflow_verification.md) — DAG-shaped workflows, failure propagation via backward inference, soft dependencies via modal quantifiers
-5. [The Vibe Coding Connection](10_applications/vibe_coding.md) — LLM generates code, QBBN holds the spec, same architecture as natural language verification
-6. [Prolog Examples](prolog/) — Runnable logic programming examples demonstrating the concepts
+5. [The Formal Verification Landscape](10_applications/formal_verification_landscape.md) — Testing → static analysis → model checking → theorem proving, and where the QBBN sits (Level 2: model checking with probability)
+6. [The Verification Bottleneck and LLMs](10_applications/verification_bottleneck.md) — The annotation bottleneck in verification mirrors NLP; LLMs solve both the same way
+7. [The Logic Programming Connection](10_applications/logic_programming_connection.md) — Prolog, Datalog, CLP, ProbLog, MLNs — the family tree and where the QBBN sits
+8. [The Vibe Coding Connection](10_applications/vibe_coding.md) — LLM generates code, QBBN holds the spec, same architecture as natural language verification
+9. [Prolog Examples](prolog/) — Runnable logic programming examples demonstrating the concepts
 
 ## Key Open Questions
 
 - **Functions and values**: The calculus handles truth values but not computed values. The logic programming tradition (Prolog, Datalog, CLP) maps the design space. The QBBN sits at Datalog (decidable, no function symbols). Extending to computed values requires careful design to preserve decidability. See [Functions as Relations](10_applications/functions_as_relations.md).
 
 - **Testing as verification**: Two levels mirror Rust's compilation pipeline. Level 1 (compilation): does the logical form type-check? Level 2 (inference): does the factor graph produce the expected posterior? The growing test suite is both a grammar coverage test and an inference test.
+
+- **The verification bottleneck**: Writing formal specifications is as expensive as writing formal linguistic annotations. LLMs solve both bottlenecks the same way — generate candidates, verify formally, repair iteratively. See [The Verification Bottleneck and LLMs](10_applications/verification_bottleneck.md).
 
 ## Related Work
 - [The QBBN Paper (2024)](https://arxiv.org/abs/2402.06557)
