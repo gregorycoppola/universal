@@ -20,8 +20,8 @@ accessible to most technical.
 
 ## Core Background (Moderate)
 
-5. **Fodor, *The Language of Thought* (1975)** — The LOT hypothesis. Dense but
-   essential. Focus on Chapters 1-3.
+5. **Leibniz, selections on the *characteristica universalis*** — The dream that
+   the QBBN realizes. See Jolley (ed.), *The Cambridge Companion to Leibniz*.
 
 6. **Chomsky, *Syntactic Structures* (1957)** — Short and revolutionary. The
    argument that language has structure beyond statistical patterns.
@@ -50,40 +50,29 @@ accessible to most technical.
     Chapters I-IV for the forward fragment, Chapter V for second-order logic.
 
 12. **Koller and Friedman, *Probabilistic Graphical Models* (2009)** — The
-    definitive textbook on factor graphs and message passing. Comprehensive but
-    1200 pages.
+    definitive textbook on factor graphs and message passing.
 
-13. **Steedman, *The Syntactic Process* (2000)** — Combinatory Categorial Grammar,
-    the most developed type-driven parsing framework. Contrast with the QBBN's
-    simpler slot grammar.
+13. **Steedman, *The Syntactic Process* (2000)** — Combinatory Categorial Grammar.
+    Contrast with the QBBN's simpler slot grammar.
 
 14. **Richardson and Domingos, "Markov Logic Networks" (2006)** — The closest
-    prior work to the QBBN in the probabilistic logic tradition. Important for
-    understanding what the QBBN does differently.
+    prior work to the QBBN in the probabilistic logic tradition.
 
 ## Philosophy Deep Dives (For Context)
 
 15. **Frege, *Begriffsschrift* (1879)** — The invention of predicate logic.
-    Historical and foundational.
 
-16. **Aristotle, *Prior Analytics*** — The invention of formal logic. Syllogisms
-    as the ancestor of belief propagation.
+16. **Aristotle, *Prior Analytics*** — The invention of formal logic.
 
-17. **Leibniz, selections on the *characteristica universalis*** — The dream that
-    the QBBN realizes. See Jolley (ed.), *The Cambridge Companion to Leibniz*.
-
-18. **Fodor and Pylyshyn, "Connectionism and Cognitive Architecture" (1988)** —
-    The argument that connectionist systems (including LLMs) need compositional
-    structure. Prescient and still relevant.
+17. **Kowalski, "Predicate Logic as a Programming Language" (1974)** — The
+    foundational equation: Algorithm = Logic + Control.
 
 ## The LLM Context
 
-19. **Karpathy, "Vibe Coding" (2025)** — The tweet that named the methodology.
-    https://x.com/karpathy/status/1886192184808149383
+18. **Karpathy, "Vibe Coding" (2025)** — The tweet that named the methodology.
 
-20. **Blevins, Gonen, and Zettlemoyer, "Prompting Language Models for Linguistic
+19. **Blevins, Gonen, and Zettlemoyer, "Prompting Language Models for Linguistic
     Structure" (2023)** — Evidence that LLMs have metalinguistic knowledge.
 
-21. **Ettinger et al., "You Are an Expert Linguistic Annotator" (2023)** —
-    Evidence that LLMs cannot produce exact semantic parses. Motivates the
-    grammar-first approach.
+20. **Ettinger et al., "You Are an Expert Linguistic Annotator" (2023)** —
+    Evidence that LLMs cannot produce exact semantic parses.

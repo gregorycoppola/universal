@@ -1,16 +1,16 @@
 # Universal Grammar and the Language of Concepts
 
-A collection of notes exploring the connection between Chomsky's Universal Grammar,
-Fodor's Language of Thought, and the typed logical language developed in
+A collection of notes exploring the connection between Leibniz's characteristica
+universalis, Chomsky's Universal Grammar, and the typed logical language developed in
 [Statistical Parsing for Logical Information Retrieval](https://github.com/gregorycoppola/world) (Coppola, 2026).
 
 ## Thesis
 
 The typed logical language of the QBBN — role-labeled predicates, quantified Horn clauses,
-three tiers of expressiveness from Prawitz — is a *language of concepts*: a formal
-Mentalese in which every thought is compositional, every inference is traceable, and every
-conclusion is verifiable. LLMs lack this language, which is why they hallucinate. The
-QBBN provides it, which is why it doesn't.
+three tiers of expressiveness from Prawitz — is a candidate *characteristica universalis*:
+a formal language in which every thought is compositional, every inference is traceable,
+and every conclusion is verifiable. LLMs lack this language, which is why they hallucinate.
+The QBBN provides it, which is why it doesn't.
 
 ## Reading Order
 
@@ -23,10 +23,10 @@ The deep history — from Plato's Forms to Frege's concept-script:
 4. [From Leibniz to Frege](00_philosophy/leibniz_to_frege.md) — The dream of a universal language, through Kant, Russell, Wittgenstein, and Carnap
 
 ### 1. Foundations
-The five intellectual ancestors of the QBBN:
+The intellectual ancestors of the QBBN:
 
 1. [Chomsky: Universal Grammar](01_foundations/chomsky_universal_grammar.md) — The claim that language has innate structure
-2. [Fodor: Language of Thought](01_foundations/fodor_language_of_thought.md) — The claim that thought itself is language-like
+2. [Leibniz: The Characteristica Universalis](01_foundations/fodor_language_of_thought.md) — The dream of a universal formal language and mechanical reasoning
 3. [Montague: Formal Semantics](01_foundations/montague_formal_semantics.md) — The math that connects language to logic
 4. [Prawitz: Natural Deduction](01_foundations/prawitz_natural_deduction.md) — The proof theory that constrains inference
 5. [Pearl: Probabilistic Reasoning](01_foundations/pearl_probabilistic_reasoning.md) — The machinery that makes it run
@@ -39,9 +39,9 @@ Why formal NLP failed historically and why LLMs change the equation:
 3. [The LLM as Annotator](02_the_bitter_lesson/llm_as_annotator.md) — Why LLMs change the equation
 
 ### 3. Language of Concepts
-The novel synthesis — connecting the QBBN's logical language to Fodor's LOT and Chomsky's UG:
+The novel synthesis — connecting the QBBN's logical language to Leibniz's dream and Chomsky's UG:
 
-1. [What Is a Language of Thought?](03_language_of_concepts/what_is_lot.md) — Fodor's requirements and the QBBN as LOT
+1. [What Is a Universal Language of Thought?](03_language_of_concepts/what_is_lot.md) — Leibniz's requirements and the QBBN as characteristica
 2. [Typed Predicates as Concepts](03_language_of_concepts/typed_predicates_as_concepts.md) — Role-labeled predicates = structured concepts
 3. [The Three Tiers](03_language_of_concepts/three_tiers.md) — Prawitz's tiers as levels of conceptual complexity
 4. [UG as Interface Specification](03_language_of_concepts/ug_as_interface.md) — Grammar rules as the universal mapping
@@ -49,7 +49,7 @@ The novel synthesis — connecting the QBBN's logical language to Fodor's LOT an
 ### 4. Hallucination and Verification
 Why this matters — LLMs hallucinate because they lack formal language, and formal verification is the solution:
 
-1. [Why LLMs Hallucinate](04_hallucination/why_llms_hallucinate.md) — No LOT, no verification, no grounding
+1. [Why LLMs Hallucinate](04_hallucination/why_llms_hallucinate.md) — No formal language, no verification, no grounding
 2. [The Verification Gap](04_hallucination/verification_gap.md) — The runtime analogy — you trust code because you run it
 3. [The QBBN as Runtime](04_hallucination/qbbn_as_runtime.md) — The QBBN as a "Python interpreter" for thought
 4. [Formal Verification](04_hallucination/formal_verification.md) — Why natural language must be translated to formal language to be checked
@@ -102,7 +102,7 @@ The universal language beyond natural language — software engineering as the f
 2. [Software Architecture as Logic](10_applications/software_architecture.md) — Components are entities, dependencies are Horn clauses, the architecture diagram is a factor graph
 3. [Functions as Relations](10_applications/functions_as_relations.md) — Data flow through shared variables, functions as predicates with output roles
 4. [Workflow Verification](10_applications/workflow_verification.md) — DAG-shaped workflows, failure propagation via backward inference, soft dependencies via modal quantifiers
-5. [The Formal Verification Landscape](10_applications/formal_verification_landscape.md) — Testing → static analysis → model checking → theorem proving, and where the QBBN sits (Level 2: model checking with probability)
+5. [The Formal Verification Landscape](10_applications/formal_verification_landscape.md) — Testing → static analysis → model checking → theorem proving, and where the QBBN sits
 6. [The Verification Bottleneck and LLMs](10_applications/verification_bottleneck.md) — The annotation bottleneck in verification mirrors NLP; LLMs solve both the same way
 7. [The Logic Programming Connection](10_applications/logic_programming_connection.md) — Prolog, Datalog, CLP, ProbLog, MLNs — the family tree and where the QBBN sits
 8. [The Vibe Coding Connection](10_applications/vibe_coding.md) — LLM generates code, QBBN holds the spec, same architecture as natural language verification

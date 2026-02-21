@@ -55,15 +55,6 @@
 - Chierchia, G. and McConnell-Ginet, S. *Meaning and Grammar*. MIT Press, 2000.
 - Evans, N. and Levinson, S. "The Myth of Language Universals." *Behavioral and Brain Sciences*, 32(5):429-448, 2009.
 
-## Philosophy of Mind
-
-- Fodor, J. *The Language of Thought*. Harvard University Press, 1975.
-- Fodor, J. *Concepts: Where Cognitive Science Went Wrong*. Oxford University Press, 1998.
-- Fodor, J. *LOT 2: The Language of Thought Revisited*. Oxford University Press, 2008.
-- Fodor, J. and Pylyshyn, Z. "Connectionism and Cognitive Architecture: A Critical Analysis." *Cognition*, 28:3-71, 1988.
-- Pinker, S. *The Language Instinct*. William Morrow, 1994.
-- Aydede, M. "The Language of Thought Hypothesis." *Stanford Encyclopedia of Philosophy*, 2010.
-
 ## Probabilistic Graphical Models
 
 - Pearl, J. *Probabilistic Reasoning in Intelligent Systems*. Morgan Kaufmann, 1988.
@@ -80,7 +71,7 @@
 
 - Marcus, M., Santorini, B., and Marcinkiewicz, M.A. "Building a Large Annotated Corpus of English: The Penn Treebank." *Computational Linguistics*, 19(2):313-330, 1993.
 - Baker, C.F., Fillmore, C.J., and Lowe, J.B. "The Berkeley FrameNet Project." COLING, 1998.
-- Palmer, M., Gildea, D., and Kingsbury, P. "The Proposition Bank: An Annotated Corpus of Semantic Roles." *Computational Linguistics*, 31(1):71-106, 2005.
+- Palmer, M., Gildea, D., and Kingsbury, P. "The Proposition Bank." *Computational Linguistics*, 31(1):71-106, 2005.
 - Banarescu, L. et al. "Abstract Meaning Representation for Sembanking." LAW, 2013.
 - Eisner, J. "Three New Probabilistic Models for Dependency Parsing." COLING, 1996.
 - McDonald, R. et al. "Non-Projective Dependency Parsing Using Spanning Tree Algorithms." HLT-EMNLP, 2005.
@@ -93,18 +84,18 @@
 ## Probabilistic Logic
 
 - Richardson, M. and Domingos, P. "Markov Logic Networks." *Machine Learning*, 62:107-136, 2006.
-- De Raedt, L., Kimmig, A., and Toivonen, H. "ProbLog: A Probabilistic Prolog and Its Application in Link Discovery." IJCAI, 2007.
-- Manhaeve, R. et al. "DeepProbLog: Neural Probabilistic Logic Programming." NeurIPS, 2018.
+- De Raedt, L., Kimmig, A., and Toivonen, H. "ProbLog." IJCAI, 2007.
+- Manhaeve, R. et al. "DeepProbLog." NeurIPS, 2018.
 - Rocktäschel, T. and Riedel, S. "End-to-End Differentiable Proving." NeurIPS, 2017.
 - Garcez, A.S., Lamb, L.C., and Gabbay, D.M. *Neural-Symbolic Cognitive Reasoning*. Springer, 2009.
 
 ## LLMs and Modern AI
 
 - Ambridge, B. and Blything, L. "Large Language Models Are Better Than Theoretical Linguists at Theoretical Linguistics." *Theoretical Linguistics*, 50:33-48, 2024.
-- Begus, G., Dabkowski, M., and Rhodes, R. "Large Linguistic Models: Investigating LLMs' Metalinguistic Abilities." arXiv:2305.00948, 2025.
+- Begus, G., Dabkowski, M., and Rhodes, R. "Large Linguistic Models." arXiv:2305.00948, 2025.
 - Blevins, T., Gonen, H., and Zettlemoyer, L. "Prompting Language Models for Linguistic Structure." ACL, 2023.
 - Gulordava, K. et al. "Colorless Green Recurrent Networks Dream Hierarchically." NAACL, 2018.
-- Ettinger, A. et al. "You Are an Expert Linguistic Annotator: Limits of LLMs as Analyzers of Abstract Meaning Representation." arXiv:2310.17793, 2023.
+- Ettinger, A. et al. "You Are an Expert Linguistic Annotator." arXiv:2310.17793, 2023.
 - Koeva, S. "Large Language Models in Linguistic Research." CLIB, 2024.
 - Ji, Z. et al. "Survey of Hallucination in Natural Language Generation." *ACM Computing Surveys*, 55(12):1-38, 2023.
 - Huang, L. et al. "A Survey on Hallucination in Large Language Models." arXiv:2311.05232, 2023.
@@ -114,7 +105,7 @@
 
 - Sutton, R. "The Bitter Lesson." Blog post, March 13, 2019.
 - Karpathy, A. "Vibe Coding." Post on X, February 2, 2025.
-- Coppola, G. "The Quantified Boolean Bayesian Network: Theory and Experiments with a Logical Graphical Model." arXiv:2402.06557, 2024.
+- Coppola, G. "The Quantified Boolean Bayesian Network." arXiv:2402.06557, 2024.
 - Coppola, G. "Statistical Parsing for Logical Information Retrieval." 2026.
 
 ## Secondary Sources and Encyclopedias
@@ -122,8 +113,8 @@
 - Spade, P.V. "The Problem of Universals." *Stanford Encyclopedia of Philosophy*, 2020.
 - Klima, G. "The Medieval Problem of Universals." *Stanford Encyclopedia of Philosophy*, 2017.
 - Smith, R. "Aristotle's Logic." *Stanford Encyclopedia of Philosophy*, 2020.
-- Aydede, M. "The Language of Thought Hypothesis." *Stanford Encyclopedia of Philosophy*, 2010.
 - Fine, G. *On Ideas: Aristotle's Criticism of Plato's Theory of Forms*. Oxford, 1993.
 - Ackrill, J.L. *Aristotle's Categories and De Interpretatione*. Oxford, 1963.
 - Baker, M. *The Atoms of Language*. Basic Books, 2001.
 - Newmeyer, F. *Language Form and Language Function*. MIT Press, 1998.
+- Jolley, N. (ed.) *The Cambridge Companion to Leibniz*. Cambridge University Press, 1995.
