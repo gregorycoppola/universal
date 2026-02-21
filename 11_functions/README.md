@@ -8,29 +8,30 @@ How do we extend the characteristica to handle functions without losing the prop
 
 ## The Design Space
 
-There are four approaches, each with different tradeoffs:
+There are five approaches, each with different tradeoffs:
 
 1. [Functions as Relations](relations.md) — Reify functions as predicates with output roles. Pure FOL, no new machinery. But enumeration-only — no computation.
 
 2. [Function Symbols](symbols.md) — Allow terms like `multiply(m, c)` inside predicates. Standard FOL. But breaks the Datalog safety restriction and risks non-termination.
 
-3. [Constraint Logic Programming](clp.md) — Keep Horn clauses but add a constraint domain with a built-in solver. The natural next step. Decidable if the constraint domain is decidable.
+3. [Constraint Logic Programming](clp.md) — Keep Horn clauses but add a constraint domain with a built-in solver. Well-understood, decidable for decidable domains.
 
-4. [Evaluation as Inference](eval.md) — Define computation rules as Horn clauses that reduce expressions step by step. Turing-complete but stays within the calculus. Essentially encoding an interpreter in FOL.
+4. [Evaluation as Inference](eval.md) — Define computation rules as Horn clauses that reduce expressions step by step. Turing-complete but stays within the calculus.
+
+5. [Typed Functions in the Lexicon](typed_functions.md) — **The recommended approach.** Extend the lexicon with `function` declarations that the interpreter calls instead of looking up. Minimal new machinery, full computation, decidable if functions terminate, proof trees preserved.
 
 ## The Tradeoff
 
-| Approach | Expressiveness | Decidability | Stays in FOL | Computes |
+| Approach | Computes | Decidable | New machinery | Proof trees |
 |---|---|---|---|---|
-| Relations | Low | Yes (Datalog) | Yes | No — lookup only |
-| Function symbols | High | No (in general) | Yes | Yes — but may not terminate |
-| CLP | Medium-High | Depends on domain | Extends FOL | Yes — via external solver |
-| Eval as inference | Full (Turing-complete) | No | Yes | Yes — but may not terminate |
+| Relations | No | Yes | None | Yes |
+| Function symbols | Yes | No | None | Yes |
+| CLP | Yes | Depends | External solver | Two systems |
+| Eval as inference | Yes | No | None | Yes (verbose) |
+| **Typed functions** | **Yes** | **Yes (if total)** | **One lexicon type** | **Yes** |
 
 ## Where We Are
 
-The QBBN currently sits at **Relations** — the Datalog boundary. This is sufficient for propositional reasoning (who trusts whom, what follows from what). It is not sufficient for quantitative reasoning (E = mc², compound interest, sorting algorithms).
+The QBBN currently sits at **Relations** — the Datalog boundary. The recommended next step is **Typed Functions** — extending the lexicon with function declarations and teaching the interpreter to call them. This preserves Horn clause structure, the calculus ratiocinator, proof trees, and decidability while adding arbitrary computation.
 
-The natural next step is **CLP** — it preserves the Horn clause structure, keeps the calculus ratiocinator intact, and adds computation via domain-specific solvers. The logic programming tradition (Prolog → CLP(R) → CLP(FD) → CHR) has mapped this path thoroughly.
-
-The question is not *whether* to extend to functions but *how much* to extend while preserving the properties that matter: verifiability, tractability, and human readability.
+The path beyond that — CLP for constraint domains, eval-as-inference for theoretical completeness — is mapped by the logic programming tradition and available when needed.
