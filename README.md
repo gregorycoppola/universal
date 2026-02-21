@@ -26,7 +26,7 @@ The deep history — from Plato's Forms to Frege's concept-script:
 The intellectual ancestors of the QBBN:
 
 1. [Chomsky: Universal Grammar](01_foundations/chomsky_universal_grammar.md) — The claim that language has innate structure
-2. [Leibniz: The Characteristica Universalis](01_foundations/fodor_language_of_thought.md) — The dream of a universal formal language and mechanical reasoning
+2. [Leibniz: The Characteristica Universalis](01_foundations/leibniz_characteristica.md) — The dream of a universal formal language and mechanical reasoning
 3. [Montague: Formal Semantics](01_foundations/montague_formal_semantics.md) — The math that connects language to logic
 4. [Prawitz: Natural Deduction](01_foundations/prawitz_natural_deduction.md) — The proof theory that constrains inference
 5. [Pearl: Probabilistic Reasoning](01_foundations/pearl_probabilistic_reasoning.md) — The machinery that makes it run
