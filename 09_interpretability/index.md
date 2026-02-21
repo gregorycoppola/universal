@@ -94,6 +94,24 @@ is not interpretation (making the machine's internals readable). It is
 **interface** — a shared language in which both human and machine can express,
 check, and discuss reasoning.
 
+## The Deeper Insight: Transformers Already Implement the Calculus
+
+Recent analysis of the transformer architecture reveals a striking
+correspondence: the components of a trained transformer map systematically onto
+the components of formal inference. Attention heads learn typed relations.
+Feedforward layers function as knowledge stores. Layer stacking implements
+proof-tree-depth reasoning. The transformer has learned a distributed,
+continuous approximation of the characteristica and calculus — not by design,
+but because language encodes logical structure and the model learned to
+recapitulate it.
+
+This means that parsing LLM output into typed logical forms is not imposing
+external structure. It is decompressing the structure the model already has.
+And it reframes the relationship between our approach and mechanistic
+interpretability: they identify features and circuits in the continuous
+substrate; we provide the formal language those features and circuits implement.
+The two programs are complementary.
+
 ## Documents
 
 1. [The Interpretability Problem](interpretability_problem.md) — Why
@@ -103,9 +121,14 @@ check, and discuss reasoning.
    The reframing: you don't need to read the AI's mind, you need to check its
    work.
 
-3. [The Universal Grammar as Interface](ug_as_interface.md) — The typed logical
+3. [The Transformer as Distributed Calculus](transformer_as_calculus.md) —
+   How transformer components map onto the characteristica and calculus
+   ratiocinator: attention as predicate evaluation, feedforward as KB,
+   layers as proof depth.
+
+4. [The Universal Grammar as Interface](ug_as_interface.md) — The typed logical
    language as the shared medium between human and machine reasoning.
 
-4. [Human-Computer Fusion](human_computer_fusion.md) — The deeper vision: human
+5. [Human-Computer Fusion](human_computer_fusion.md) — The deeper vision: human
    and AI reasoning converging on the same formal language, with the human in
    control.
