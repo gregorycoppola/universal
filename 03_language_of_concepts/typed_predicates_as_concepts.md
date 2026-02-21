@@ -2,10 +2,11 @@
 
 ## The Idea
 
-A concept, in the Fodorian sense, is an atomic unit of thought that can combine
-with other concepts to form complex thoughts. "Dog" is a concept. "Red" is a
-concept. "RED DOG" is a complex thought composed from two concepts by a
-combinatorial rule.
+A concept, in the formal tradition from Frege (1879) onward, is a structured
+unit of thought that can combine with other concepts to form complex thoughts.
+Frege defined concepts as functions from objects to truth values: `man(·)` takes
+an entity and returns true or false. "Dog" is a concept. "Red" is a concept.
+"RED DOG" is a complex thought composed from two concepts by a combinatorial rule.
 
 In the QBBN's logical language, concepts are **typed predicates with role-labeled
 arguments**:
@@ -52,7 +53,7 @@ Each role has a **type** that constrains what can fill it:
     predicate believe {experiencer: e, content: s}   -- entities believe propositions
     predicate taller_than {theme: e, reference: e}   -- entities compared to entities
 
-The type system defines the ontological categories of the LOT:
+The type system defines the ontological categories of the language:
 
 - **e** (entity): objects, people, places — things that exist
 - **s** (sentential/propositional): complete thoughts — things that can be true or false
@@ -67,9 +68,9 @@ These three types correspond to the three tiers of expressiveness from Prawitz:
 | p | Tier 3: Predicate quantification | ∀P: P(theme: x) → notable(theme: x) |
 
 Types are not just a technical convenience. They are the **categories of thought**:
-entities, propositions, and properties are the fundamental kinds of things the
-mind represents. This is the same ontology found in Montague's type theory
-(e, t, and functions over them), in Frege's distinction between objects and
+entities, propositions, and properties are the fundamental kinds of things that
+formal reasoning represents. This is the same ontology found in Montague's type
+theory (e, t, and functions over them), in Frege's distinction between objects and
 concepts, and in Aristotle's categories.
 
 ## Concepts as Lexicon Entries
@@ -85,7 +86,7 @@ In the QBBN system, a concept is formally defined by a **lexicon entry**:
     entity socrates : e
       "Greek philosopher, 470-399 BC"
 
-The lexicon is the **vocabulary of Mentalese**. Each entry defines:
+The lexicon is the **vocabulary of the characteristica**. Each entry defines:
 
 1. A predicate name (the concept's identity)
 2. Typed roles (the concept's argument structure)
@@ -120,6 +121,7 @@ concepts and four composition operations yield an infinite set of thoughts.
 
 ## Key Works
 
+- Frege, G. *Begriffsschrift*. 1879.
 - Fillmore, C.J. "The Case for Case." In *Universals in Linguistic Theory*, 1968.
 - Dowty, D. "Thematic Proto-Roles and Argument Selection." *Language*, 67(3):547-619,
   1991.

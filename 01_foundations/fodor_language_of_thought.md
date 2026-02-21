@@ -1,97 +1,108 @@
-# Fodor's Language of Thought
+# Leibniz's Characteristica Universalis
 
-## The Hypothesis
+## The Vision
 
-Jerry Fodor's Language of Thought (LOT) hypothesis, introduced in *The Language of
-Thought* (1975), claims that cognitive processes operate over a compositional
-representational system — a "Mentalese" — that has the structural properties of a
-language but is not identical to any natural language.
+Gottfried Wilhelm Leibniz (1646-1716) proposed the most ambitious intellectual
+project in the history of philosophy: a **characteristica universalis** — a
+universal formal language in which all human knowledge could be expressed — paired
+with a **calculus ratiocinator** — a mechanical procedure for reasoning in that
+language.
 
-The core properties of Mentalese:
+Leibniz wrote in 1685:
 
-- **Compositionality**: Complex thoughts are built from simpler ones by systematic
-  rules. The thought JOHN LOVES MARY is composed from JOHN, LOVES, and MARY in a
-  way that determines its meaning from the meanings of its parts.
-- **Productivity**: A finite set of concepts and rules generates an infinite set of
-  possible thoughts.
-- **Systematicity**: If you can think JOHN LOVES MARY, you can also think MARY
-  LOVES JOHN. The capacity to entertain one thought entails the capacity to
-  entertain structurally related thoughts.
+> "If controversies were to arise, there would be no more need of disputation
+> between two philosophers than between two accountants. For it would suffice to
+> take their pencils in hand, to sit down to their slates, and to say to each
+> other: *Calculemus!* — Let us calculate."
 
-## The Argument
+The characteristica universalis required three properties:
 
-Fodor's argument is structural, not empirical. It proceeds:
+- **Compositionality**: Complex concepts are built from simpler ones by systematic
+  rules. The concept ALL MEN ARE MORTAL is composed from MAN, MORTAL, and a
+  quantified implication in a way that determines its meaning from its parts.
+- **Productivity**: A finite alphabet of concepts and rules generates an infinite
+  set of expressible thoughts.
+- **Mechanical reasoning**: Given the concepts and rules, disputes can be resolved
+  by calculation — no intuition, no rhetoric, no authority.
 
-1. Thought is computational (the computational theory of mind).
-2. Computation requires representations to operate over.
-3. These representations must be compositional to explain productivity and
-   systematicity.
-4. Therefore, thought operates over a compositional representational system — a
-   language.
+## Why Leibniz Failed
 
-This is not a claim that we think "in English" or "in Chinese." Mentalese is
-*pre-linguistic* — it's the medium in which meanings are represented before they are
-expressed in any natural language. Translation between natural languages is possible
-precisely because both map onto the same underlying Mentalese.
+Leibniz never built the characteristica. The obstacles were:
 
-## LOT vs. Connectionism
+1. **No formal logic**: Aristotle's syllogistic was too weak. Leibniz needed
+   predicate logic with quantifiers and relations, which Frege would not invent
+   until 1879.
+2. **No computation**: Leibniz built mechanical calculators for arithmetic, but
+   had no way to mechanize logical inference.
+3. **No ontology**: Leibniz could not specify the "alphabet of human thought" —
+   the atomic concepts from which all knowledge would be composed.
 
-The LOT hypothesis was the central battleground in the "classical vs. connectionist"
-debate of the 1980s-90s. Connectionists (Rumelhart, McClelland, Smolensky) argued
-that cognition operates over distributed representations — patterns of activation
-across networks — not discrete symbols.
+The dream was correct. The technology was three centuries away.
 
-Fodor and Pylyshyn's famous reply (1988) argued that distributed representations
-cannot explain systematicity without implementing a compositional structure — in
-which case they are just an implementation of LOT, not an alternative to it.
+## The Thread to the QBBN
 
-This debate is directly relevant to LLMs. LLMs are the most powerful connectionist
-systems ever built. They demonstrate remarkable linguistic competence. But they
-cannot verify their own reasoning, cannot trace their inferences, and hallucinate
-confidently. Fodor would say: they lack a Language of Thought.
+Each obstacle was eventually overcome:
+
+- **Frege (1879)**: Invented predicate logic — the formal language Leibniz needed.
+- **Montague (1973)**: Connected Frege's logic to natural language — showing that
+  English sentences have precise logical interpretations.
+- **Pearl (1988)**: Provided the calculus ratiocinator — belief propagation over
+  graphical models, making probabilistic inference tractable.
+- **LLMs (2020s)**: Solved the ontology problem — generating the "alphabet of
+  concepts" (lexicon entries) at scale, eliminating the annotation bottleneck.
+
+The QBBN assembles these pieces:
+
+- **Typed predicates with role labels** = the characteristica (the universal
+  formal language)
+- **Quantified Horn clauses with modal weights** = the rules of combination
+- **Belief propagation over factor graphs** = the calculus ratiocinator
+- **LLM-assisted parsing** = the bridge from natural language to the characteristica
 
 ## Relevance to This Project
 
-The typed logical language of the QBBN is a candidate Language of Thought — a formal
-Mentalese with the properties Fodor identified:
+The typed logical language of the QBBN is a candidate characteristica universalis —
+a formal language with the properties Leibniz identified:
 
 - **Compositionality**: `trust(agent: jack, patient: jill)` is composed from
   typed predicates and role-labeled arguments in a way that determines its meaning.
 - **Productivity**: A finite lexicon and grammar generates an unbounded set of
   logical forms.
-- **Systematicity**: If the system can represent `trust(agent: jack, patient: jill)`,
-  it can represent `trust(agent: jill, patient: jack)` — the roles are explicit.
+- **Mechanical reasoning**: Belief propagation derives conclusions from premises
+  with explicit, traceable proof trees.
 
-The QBBN adds something Fodor's LOT lacked: a **computational semantics**. Fodor
-said thought was compositional but never specified the inference mechanism. The QBBN
-provides one: belief propagation over factor graphs with AND, OR, and NEG factors.
-Mentalese now has a runtime.
+The QBBN adds something Leibniz could not have had: a **probabilistic** calculus.
+Leibniz imagined certainty — "let us calculate" and the answer is definitive.
+The QBBN extends this to degrees of belief — modal quantifiers (always, usually,
+sometimes) parameterize the strength of implications, and belief propagation
+computes posterior probabilities rather than yes/no verdicts.
 
 ## The LLM Connection
 
 LLMs map natural language to distributed representations (embeddings) and back.
 The QBBN maps natural language to discrete logical forms and reasons over them.
 
-The synthesis is: LLMs handle the *mapping* (natural language ↔ Mentalese), while
-the QBBN handles the *reasoning* (inference within Mentalese). This is exactly
-the architecture in the paper: LLM preprocesses → grammar parses → QBBN infers.
+The synthesis is: LLMs handle the *mapping* (natural language ↔ characteristica),
+while the QBBN handles the *reasoning* (inference within the characteristica).
+This is exactly the architecture in the paper: LLM preprocesses → grammar parses
+→ QBBN infers.
 
-The LLM is the encoder/decoder. The QBBN is the Language of Thought.
+The LLM is the translator. The QBBN is the characteristica universalis.
 
 ## Key Works
 
-- Fodor, J. *The Language of Thought*. Harvard University Press, 1975.
-- Fodor, J. and Pylyshyn, Z. "Connectionism and Cognitive Architecture: A Critical
-  Analysis." *Cognition*, 28:3-71, 1988.
-- Fodor, J. *LOT 2: The Language of Thought Revisited*. Oxford University Press, 2008.
-- Pinker, S. *The Language Instinct*. William Morrow, 1994.
+- Leibniz, G.W. *Dissertatio de Arte Combinatoria*. 1666.
+- Jolley, N. (ed.) *The Cambridge Companion to Leibniz*. Cambridge University Press, 1995.
+- Frege, G. *Begriffsschrift*. 1879.
+- Montague, R. "The Proper Treatment of Quantification in Ordinary English." 1973.
+- Pearl, J. *Probabilistic Reasoning in Intelligent Systems*. Morgan Kaufmann, 1988.
 
 ## Open Questions
 
-- If LLMs can approximate systematic reasoning without explicit LOT, does that
-  weaken Fodor's argument or confirm it (since the training data encodes LOT-like
-  structure)?
-- Is the QBBN's logical language *the* LOT, or *a* LOT — one of many possible
-  formal Mentaleses?
+- Is the QBBN's logical language *the* characteristica universalis, or *a*
+  characteristica — one of many possible formal languages sharing structural
+  properties?
 - Does the three-tier structure (entities, propositions-as-arguments, predicate
-  quantification) correspond to levels of cognitive complexity in human thought?
+  quantification) correspond to fundamental categories of thought, as Leibniz
+  and Kant believed?
+- Would Leibniz recognize this as his dream realized?

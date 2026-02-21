@@ -8,16 +8,17 @@ grammars. This is a strong empirical claim that has been debated for sixty years
 without resolution.
 
 We propose a different reading: **UG is an interface specification.** It defines
-the structural contract between surface language and the language of thought.
+the structural contract between surface language and the underlying logical form.
 
 This reframing is not a weakening of Chomsky's claim. It is a sharpening. Instead
 of asking "what is innate in the brain?" we ask "what structural mapping is
-necessary for language to connect to thought?" The answer turns out to be a finite,
-specifiable set of patterns — which is exactly what the typed slot grammar provides.
+necessary for language to connect to formal reasoning?" The answer turns out to be
+a finite, specifiable set of patterns — which is exactly what the typed slot
+grammar provides.
 
 ## The Interface
 
-Every natural language sentence must be converted into a thought — a structured
+Every natural language sentence must be converted into a structured
 representation over which inference can operate. This conversion requires:
 
 1. **Identifying entities**: which noun phrases refer to things in the world
@@ -29,7 +30,7 @@ representation over which inference can operate. This conversion requires:
 These five tasks are **universal** — they must be performed for every sentence in
 every human language. The specific mechanisms vary (word order, case marking,
 agreement, particles), but the tasks are the same. This is what UG is: the
-specification of the mapping from surface form to conceptual form.
+specification of the mapping from surface form to logical form.
 
 ## The Grammar as UG
 
@@ -73,21 +74,15 @@ In the QBBN framework:
 A new language requires new lexicon entries but the same grammar rules. The
 universal part is the structural mapping; the parametric part is the vocabulary.
 
-This is a testable prediction: if you build a lexicon for a typologically
-different language (say, Japanese or Turkish) and feed it through the same grammar
-rules (suitably adapted for word order), you should get correct logical forms.
-The grammar rules may need surface-level adaptation (head-final vs. head-initial
-ordering), but the underlying type-driven dispatch should be the same.
-
 ## UG Without Biology
 
 The reframing avoids the biological debate entirely. We do not need to claim that
 UG is innate, that there is a "language organ," or that children have a Universal
 Grammar module in their brains. We need only claim that:
 
-1. Thought has structure (Fodor's LOT).
+1. Thought has formal structure (Leibniz's characteristica).
 2. Language expresses thought.
-3. Therefore, there must be a systematic mapping from language to thought.
+3. Therefore, there must be a systematic mapping from language to formal structure.
 4. That mapping has universal structural properties.
 
 This is a logical argument, not an empirical one. It holds regardless of whether

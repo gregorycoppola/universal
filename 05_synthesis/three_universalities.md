@@ -25,12 +25,6 @@ composition — and the typed logical language captures exactly these categories
   predicate quantification — claimed sufficient for all natural language
   semantics
 
-**What this means**: A speaker of any human language can, in principle, express
-any thought in the typed logical language. The mapping from surface form to
-logical form varies by language (different word orders, morphological systems,
-syntactic structures), but the target representation is the same. The lexicon
-is language-specific. The logical language is universal.
-
 **This is Chomsky's sense of "universal grammar"** — the structural invariants
 shared by all human languages. But we extend it beyond syntax to semantics: not
 just that all languages have noun phrases, but that all languages express the
@@ -54,8 +48,7 @@ quantification, and composition rules.
 **What this means**: The typed logical language is not one formalization among
 many. It is the formalization — the unique structure that every path through
 the intellectual landscape converges on. This convergence is evidence that the
-structure is discovered, not invented. It is a feature of reality, not a choice
-of notation.
+structure is discovered, not invented.
 
 **This is the Platonic sense of "universal"** — the Form of Reasoning, the
 abstract structure that all particular reasoning systems participate in.
@@ -75,55 +68,39 @@ machines can communicate, reason together, and verify each other's conclusions.
 - The QBBN pipeline: LLM translates natural language to typed logical forms,
   grammar compiles them, QBBN verifies them — human reviews at every step
 
-**What this means**: The typed logical language is not a tool for humans to
-command machines, nor a tool for machines to explain themselves to humans. It
-is the meeting point — the common ground where both parties reason over the
-same formal objects, with verification as the shared guarantee of correctness.
-
 **This is Leibniz's sense of "universal"** — the characteristica universalis,
 the language in which disputes can be resolved by calculation. Leibniz imagined
 two philosophers disagreeing and saying "let us calculate." The QBBN realizes
-this: when human and machine disagree, they can check the proof tree. The
-formal language is what makes "let us calculate" possible.
+this: when human and machine disagree, they can check the proof tree.
 
 ## Why Three Is Stronger Than One
 
 Any single universality claim could be challenged:
 
-- "All languages share structure" — maybe that's just human biology, not a
-  deep truth about reasoning
+- "All languages share structure" — maybe that's just human biology
 - "All formalizations converge" — maybe later thinkers were influenced by
   earlier ones
 - "Humans and machines can share a language" — maybe the formal language is
   just a convenient engineering artifact
 
-But the three claims reinforce each other:
-
-- If all human languages share the structure AND all formalizations converge
-  on the same structure, it is unlikely to be just biology — it is something
-  about reasoning itself
-- If the structure is about reasoning itself AND machines can operate on it
-  too, then it is not anthropocentric — it is universal in the strongest sense
-- If it is universal in the strongest sense, then it is the right foundation
-  for human-computer collaboration — not because we chose it, but because
-  there is nothing else it could be
-
-The three universalities are three measurements of the same underlying reality.
-Their convergence is the evidence.
+But the three claims reinforce each other. If all human languages share the
+structure AND all formalizations converge on the same structure, it is unlikely
+to be just biology — it is something about reasoning itself. If the structure
+is about reasoning itself AND machines can operate on it too, then it is not
+anthropocentric — it is universal in the strongest sense.
 
 ## The Practical Consequence
 
 The practical consequence is immediate: **we do not need to solve the
 interpretability problem.** We do not need to make neural networks
-human-readable. We do not need to make human reasoning machine-readable. We
-need to meet in the middle — at the typed logical language that both already
-implicitly use.
+human-readable. We need to meet in the middle — at the typed logical language
+that both already implicitly use.
 
-The human is already thinking in something like typed predicates (Fodor's
-Language of Thought). The machine can be made to produce typed predicates (the
-QBBN pipeline). The meeting point already exists. The work is making it
-explicit, building the verification infrastructure, and teaching both parties
-to operate there consciously.
+The human is already reasoning in something like typed predicates — this is
+the insight shared by Aristotle, Leibniz, Frege, and Montague. The machine
+can be made to produce typed predicates (the QBBN pipeline). The meeting
+point already exists. The work is making it explicit, building the verification
+infrastructure, and teaching both parties to operate there consciously.
 
 This reframes the AI alignment problem. Alignment is usually framed as: "how
 do we make AI do what we want?" But if human and AI share a formal language
@@ -139,9 +116,3 @@ verification. And verification, unlike hope, scales.
 | Across human languages | 00 (philosophy), 01 (foundations), 03 (language of concepts) |
 | Across formalizations | 07 (metaphysics — the four convergences) |
 | Across humans and machines | 04 (verification), 08 (computability), 09 (interpretability) |
-
-The synthesis sections (05) tie them together. The references (06) provide the
-scholarly foundation. The computability section (08) explains why the meeting
-point is tractable. The whole repository is organized around this three-part
-structure, even though it was not designed that way from the start — it emerged
-naturally, which is itself a small piece of evidence for the thesis.

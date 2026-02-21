@@ -10,19 +10,14 @@ to the species.
 The argument proceeds from the **poverty of the stimulus**: children acquire language
 from limited, noisy input, yet converge on grammars of extraordinary complexity and
 regularity. The input underdetermines the grammar. Therefore, something must constrain
-the hypothesis space — and that something is Universal Grammar (UG), an innate
-faculty that specifies the structural possibilities of human language.
+the hypothesis space — and that something is Universal Grammar (UG).
 
 ## Principles and Parameters
 
-UG is not a single grammar but a framework. It consists of:
+UG consists of:
 
-- **Principles**: invariant structural constraints shared by all languages (e.g.,
-  every sentence has a subject, structure is hierarchical not linear, dependencies
-  are bounded).
-- **Parameters**: binary switches that vary across languages (e.g., head-initial vs.
-  head-final, pro-drop vs. non-pro-drop). Language acquisition is the process of
-  setting parameters based on input.
+- **Principles**: invariant structural constraints shared by all languages.
+- **Parameters**: binary switches that vary across languages.
 
 This gives a combinatorial account of linguistic diversity: a small number of binary
 parameters generates a large space of possible grammars, all sharing the same
@@ -34,17 +29,16 @@ UG is not a claim about specific words, meanings, or concepts. It is a claim abo
 **structure** — about the kinds of relationships that can hold between elements in a
 sentence. It says nothing about what those elements mean.
 
-This is precisely the gap that Montague's formal semantics and Fodor's Language of
-Thought attempt to fill: UG gives you the syntax, but you need a theory of meaning
-to connect it to the world.
+This is precisely the gap that Montague's formal semantics attempts to fill: UG
+gives you the syntax, but you need a theory of meaning to connect it to the world.
+The QBBN provides this connection through typed predicates and role labels.
 
 ## Relevance to This Project
 
 The typed slot grammar in *Statistical Parsing for Logical Information Retrieval*
-(Coppola, 2026) is, in a sense, a computational realization of UG — a finite set of
-structural patterns that map natural language sentences to a universal logical form.
-The grammar rules (copular fact, transitive fact, conditional, etc.) are the
-"principles"; the lexicon entries that determine which rule fires are the "parameters."
+(Coppola, 2026) is a computational realization of UG — a finite set of structural
+patterns that map natural language sentences to a universal logical form. The grammar
+rules are the "principles"; the lexicon entries are the "parameters."
 
 The key difference: Chomsky's UG maps surface structure to deep structure (both
 syntactic). Our grammar maps surface structure to **logical form** — a typed,
@@ -62,8 +56,8 @@ semantics.
 ## Open Questions
 
 - Is UG best understood as a biological endowment (Chomsky's view), a statistical
-  regularity of language input (the connectionist view), or a logical necessity of
-  compositional systems (the mathematical view)?
+  regularity (the connectionist view), or a logical necessity of compositional
+  systems (the mathematical view)?
 - Does the success of LLMs at syntactic tasks without explicit UG refute Chomsky,
   or confirm him (since the structure must be in the training data)?
 - If a formal grammar + LLM disambiguation achieves UG-like coverage, does the
